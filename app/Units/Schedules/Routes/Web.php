@@ -23,6 +23,6 @@ class Web extends RouteFile
      */
     protected function schedulesRoutes()
     {
-        $this->router->get('/', ['as' => 'schedules.index', 'uses' => 'ScheduleController@index']);
+        $this->router->get('/', ['as' => 'schedules.index', 'uses' => 'Web\ScheduleController@index']);
     }
 }

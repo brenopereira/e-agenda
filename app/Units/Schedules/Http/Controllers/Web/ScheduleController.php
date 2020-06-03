@@ -7,6 +7,6 @@ use App\Support\Http\Controller;
 class ScheduleController extends Controller {
     public function index()
     {
-        return true;
+        return view('schedules::index');
     }
 }

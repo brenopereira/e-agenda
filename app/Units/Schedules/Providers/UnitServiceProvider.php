@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Units\Core\Providers;
+namespace App\Units\Schedules\Providers;
 
 use App\Support\Units\ServiceProvider;
 
 /**
  * Class UnitServiceProvider
- * @package App\Units\Core\Providers
+ * @package App\Units\Schedules\Providers
  */
 class UnitServiceProvider extends ServiceProvider
 {
     /**
      * @var string
      */
-    protected $alias = "core";
+    protected $alias = "schedules";
 
     /**
      * @var string
@@ -28,5 +28,8 @@ class UnitServiceProvider extends ServiceProvider
     /**
      * @var array
      */
-    protected $providers = [];
+    protected $providers = [
+        ScheduleServiceProvider::class,
+        RouteServiceProvider::class,
+    ];
 }
